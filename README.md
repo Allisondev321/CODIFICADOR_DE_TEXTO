@@ -1,4 +1,5 @@
 Codificador de Texto
+
 Este projeto é uma ferramenta simples de criptografia e descriptografia de texto. Ele permite que você insira um texto, criptografe-o ou descriptografe-o com base em regras específicas e copie o resultado para a área de transferência.
 
 🚀 Começando
