@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="script.js"></script>
+
+</head>
+<body class="body">
+    <img class="logo" src="./assents/logo alura.png" alt="logo alura">
+
+    <main class="conteiner">
+        
+        <section class="principal">
+            <textarea id="texto" class="principal__input" rows="15" cols="50"  placeholder="Digite seu texto"></textarea>
+            <section class="principal__inferior">
+                <section class="principal__inferior__aviso">    
+                    <p class="principal__inferior__aviso_texto">Apenas letras minúsculas e sem acento.</p>
+                    <img class="principal__inferior__aviso_icone" src="./assents/info.png" alt="img informação">
+                </section>
+                <section class="principal__inferior__botoes">
+                    <button onclick="criptografar()" class="botoes__criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" class="botoes__descriptografar">Descriptografar</button>
+                </section>
+            </section>  
+        </section>
+        
+        <section class="secundario">
+            <img id="imagemSecundario" src="./assents/pessoa lupa.png" alt="pessoa com lupa">
+            <section id="textoSecundario" class="secundario__texto">
+                <p id="mensagem1" class="secundario__texto__mensagem1">Nenhuma mensagem encontrada</p>
+                <p id="mensagem2" class="secundario__texto__mensagem2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <p id="mensagem3" class="secundario__texto__mensagem3"></p>
+                <button id="copiar" onclick="copiar()" class="secundario__texto__copiar">Copiar</button>
+            </section>     
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Allison Prado. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

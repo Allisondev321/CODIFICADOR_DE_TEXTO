@@ -1,0 +1,218 @@
+/* Importa as fontes da biblioteca Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Define as variáveis de cor e fonte */
+:root {
+    --cor-primaria: #F6F6F6; 
+    --cor-secundaria: #0A3871; 
+    --cor-terciaria: #495057;
+    --cor-quartenaria: #D8DFE8; 
+    --cor-hover: #343A40; 
+
+}
+
+/* Remove margens e preenchimentos padrão de todos os elementos */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo básico para o corpo e HTML */
+body, ht {
+    height: auto;
+    box-sizing: border-box; /* Altera o modelo de caixa para incluir padding e borda no tamanho total dos elementos */
+    font-family: "Inter", sans-serif; /* Define a fonte padrão como Arial */
+    display: flex;
+    
+}
+
+.logo{
+    margin: 40px 40px;
+    width: 120px;
+    height: 48px;
+}
+
+/* Estilo para o contêiner principal */
+.conteiner {
+    display: flex; /* Define o contêiner como um flexbox */
+    justify-content:space-between; /* Distribui os itens com espaço igual entre eles */
+    padding: 10px; /* Adiciona preenchimento ao contêiner */
+    height: 100vh; /* Define a altura do contêiner como 100% da altura da visualização */
+    
+}
+
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 300px;
+    margin: 100px 20px;
+}
+
+/* Estilo para o textarea */
+.principal__input {
+    width: 680px; /* Largura do textarea */
+    height: auto; /* Altura automática para permitir o ajuste ao conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 32px; /* Tamanho da fonte */
+    font-family: "Inter", sans-serif; /* Fonte */
+    color: var(--cor-secundaria); /* Cor do texto */
+    background-color: var(--cor-primaria); /* Cor de fundo */
+    border: none; /* Remove a borda */
+    resize: none; /* Impede o redimensionamento do textarea */
+    box-shadow: none; /* Remove a sombra da borda */
+    outline: none; /* Remove o contorno ao focar */
+    box-sizing:content-box; /* Inclui padding e borda na largura total */
+}
+
+/* Estilo para o placeholder */
+.principal__input::placeholder {
+    color: var(--cor-secundaria); /* Cor do placeholder */
+    font-size: 32px; /* Tamanho da fonte do placeholder */
+    font-family: "Inter", sans-serif; /* Fonte do placeholder */
+    opacity: 1; /* Opacidade do placeholder para que ele seja totalmente visível */
+}
+
+.principal__inferior{
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    height: 67px;
+    align-items: first baseline;
+    gap: 20px;
+}
+
+.principal__inferior__aviso{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: space-between;
+    color:var(--cor-terciaria) ;
+}
+
+.principal__inferior__aviso_texto{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.principal__inferior__aviso_icone{
+    width: 16px;
+    height: 16px;
+}
+
+.principal__inferior__botoes{
+    display: flex;
+    gap: 24px;
+    width: 680px;
+    height: 67px;
+}
+
+.botoes__criptografar{
+    background-color: var(--cor-secundaria); /* Cor de fundo do botão */
+    color: var(--cor-primaria); /* Cor do texto do botão */
+    border-radius: 24px; /* Bordas arredondadas */
+    padding: 24px; /* Espaçamento interno */
+    width: 328px;
+    height:67px ;
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+}
+
+.botoes__descriptografar {
+    background-color: var(--cor-quartenaria); /* Cor de fundo do botão */
+    color: var(--cor-secundaria); /* Cor do texto do botão */
+    border-radius: 24px; /* Bordas arredondadas */
+    padding: 24px; /* Espaçamento interno */
+    width: 328px;
+    height: 67px;
+    border: 2px solid var(--cor-secundaria); /* Define a borda */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    
+}
+
+.botoes__descriptografar:active{
+
+    border: 1px solid var(--cor-hover); /* Define a borda */
+
+
+}
+
+
+.secundario{
+    display: flex;
+    width: 400px;
+    height: 944px;
+    margin: 40px 300px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.secundario__texto{
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+    height: 122px;
+    gap: 16px;
+}
+
+.secundario__texto__mensagem1{
+    
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.secundario__texto__mensagem2{
+   
+    font-weight: 400;
+    font-size: 16px;
+    text-align:center;
+
+}
+.secundario__texto__mensagem3{
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+      overflow-wrap: break-word;
+    
+}
+
+.secundario__texto__copiar{
+    display: none;
+    background-color: var(--cor-quartenaria); /* Cor de fundo do botão */
+    color: var(--cor-secundaria); /* Cor do texto do botão */
+    border-radius: 24px; /* Bordas arredondadas */
+    padding: 24px; /* Espaçamento interno */
+    width: 328px;
+    height: 67px;
+    border: 2px solid var(--cor-secundaria); /* Define a borda */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    margin: 60px 0px;
+}
+
+.secundario__texto__copiar:active{
+
+    border: 1px solid var(--cor-hover); /* Define a borda */
+
+}
+
+
+.footer {
+    color: var(--cor-secundaria); /* Cor do texto do footer */
+    text-align: center; /* Alinha o texto no centro */
+    padding: 24px; /* Adiciona espaçamento interno */
+    position: absolute; /* Fixa o footer na parte inferior da página */
+    bottom: -100px; /* Move o footer 50px para baixo da parte inferior da tela */
+    left: 50%; /* Move o footer para o meio da tela */
+    transform: translateX(-50%); /* Ajusta o footer para que ele fique centralizado */
+    width: 100%; /* Faz o footer ocupar toda a largura da tela */
+    font-size: 14px; /* Define o tamanho da fonte */
+    font-weight: 400; /* Define o peso da fonte */
+}
+
+
+
